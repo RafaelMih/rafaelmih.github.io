@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Keywords" content="FIAP, projeto, sistemas, internet" />
+    <meta name="Description" content="Projeto Gulliver Traveller FIAP" />
+    <meta name="robots" content="noindex" />
+    <title>Os Simpsons - Pontos turísticos</title>
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link href="./content/css/main.css" rel="stylesheet" />
+    <link href="./content/css/mdb.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <link rel="icon" type="image/png" href="./content/img/icons/favicon.png" />
+  </head>
+  <body id="inicio">
+    <section>
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark d-none d-lg-block navbar-bg"
+      >
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a class="navbar-brand nav-link font-simpson" href="#">
+            <strong>Os Simpsons</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 font-simpson">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="#intro">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pontoturistico">Pontos Turisticos</a>
+              </li>
+            </ul>
+            <div class="div-mp3">
+              <audio id="player" loop autoplay controls class="player-mp3">
+                <source src="./content/sound/music.mp3" type="audio/mp3" />
+              </audio>
+            </div>
+            <ul class="navbar-nav list-inline">
+              <!-- Icons -->
+              <li class="">
+                <a
+                  class="nav-link"
+                  href="https://www.youtube.com/watch?v=XPG0MqIcby8"
+                  rel="nofollow"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+              <li class="">
+                <a
+                  class="nav-link"
+                  href="https://www.facebook.com/TheSimpsons"
+                  rel="nofollow"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://twitter.com/thesimpsons"
+                  rel="nofollow"
+                  target="_blank"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+
+      <!-- Carousel wrapper -->
+      <div
+        id="introCarousel"
+        class="carousel slide carousel-fade shadow-2-strong"
+        data-mdb-ride="carousel"
+      >
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li
+            data-mdb-target="#introCarousel"
+            data-mdb-slide-to="0"
+            class="active"
+          ></li>
+          <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+          <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+        </ol>
+
+        <!-- Inner -->
+        <div class="carousel-inner">
+          <!-- Single item -->
+          <div class="carousel-item active">
+            <div class="mask bg-op">
+              <div
+                class="d-flex justify-content-center align-items-center h-100"
+              >
+                <div class="text-white text-center">
+                  <h2 class="mb-3 txt-bg">
+                    “A unica matematica que eu conheço. Eu mais voce igual para
+                    sempre.”
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item">
+            <div class="mask bg-op">
+              <div
+                class="d-flex justify-content-center align-items-center h-100"
+              >
+                <div class="text-white text-center">
+                  <h2 class="mb-3 txt-bg">
+                    “A culpa e minha e eu coloco ela em quem eu quiser.”
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item">
+            <div class="mask bg-op">
+              <div
+                class="d-flex justify-content-center align-items-center h-100"
+              >
+                <div class="text-white text-center">
+                  <h2 class="mb-3 txt-bg">
+                    “A TV me respeita. Ela ri comigo e nao de mim.”
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Inner -->
+
+        <!-- Controls -->
+        <a
+          class="carousel-control-prev"
+          href="#introCarousel"
+          role="button"
+          data-mdb-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#introCarousel"
+          role="button"
+          data-mdb-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Carousel wrapper -->
+    </section>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-5">
+      <div class="container">
+        <hr class="my-5" />
+
+        <!--Section: Content-->
+        <section class="text-center" id="pontoturistico">
+          <h4 class="mb-5">
+            <strong>Pontos turísticos visitados pelos Simpsons</strong>
+          </h4>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img src="./content/img/pontos/park.jpg" class="img-fluid" />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">The Simpsons Ride</h5>
+                  <p class="card-text">
+                    The Simpsons Ride é um simulador de movimento localizado nas
+                    áreas de Springfield do Universal Studios Florida e
+                    Universal Studios Hollywood.
+                  </p>
+                  <a
+                    href="#!"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalRide"
+                    >Ver Mais</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="./content/img/pontos/cristo.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Cristo Redentor</h5>
+                  <p class="card-text">
+                    Cristo Redentor é uma estátua art déco que retrata Jesus
+                    Cristo, localizada no topo do morro do Corcovado, a 709
+                    metros acima do nível do mar.
+                  </p>
+                  <a
+                    href="#!"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalCristo"
+                    >Ver Mais</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="./content/img/pontos/muralha.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Muralha da China</h5>
+                  <p class="card-text">
+                    A Muralha da China após um concurso informal internacional
+                    em 2007, foi considerada uma das sete maravilhas do mundo
+                    moderno.
+                  </p>
+                  <a
+                    href="#!"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalMuralha"
+                    >Ver Mais</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Section: Content-->
+
+        <hr class="my-5" />
+
+        <!--Section: Content-->
+        <section>
+          <div class="row">
+            <div class="col-md-6 gx-5 mb-4">
+              <div
+                class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="./content/img/backgrounds/selfie.jpg"
+                  class="img-fluid"
+                />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.15)"
+                  ></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-6 gx-5 mb-4" id="sobre">
+              <h4><strong>Os Simpsons</strong></h4>
+              <p class="text-muted">
+                The Simpsons é uma série de animação e sitcom norte-americana
+                criada por Matt Groening para a Fox Broadcasting Company.A série
+                é uma paródia satírica do estilo de vida da classe média dos
+                Estados Unidos (como cultura, sociedade e televisão) e aspectos
+                da condição humana, através da família protagonista, que
+                consiste de Homer Jay Simpson, Marjorie (Marge) Bouvier Simpson,
+                Bartholomew (Bart) Simpson, Elisabeth (Lisa) Marie Simpson e
+                Margareth (Maggie) Simpson, cuja vida se passa na fictícia
+                cidade de Springfield.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 gx-5 mb-4">
+              <div
+                class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
+                data-mdb-ripple-color="light"
+              >
+                <img src="./content/img/pontos/viagem.jpg" class="img-fluid" />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.15)"
+                  ></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-6 gx-5 mb-4" id="sobre">
+              <h4><strong>Os Simpsons e suas viagens</strong></h4>
+              <p class="text-muted">
+                Se existe uma família que viajou muito, com certeza os Simpsons
+                está entre elas... Com suas andanças pelo mundo todo, podemos
+                conferir alguns pontos visitados por eles.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--Section: Content-->
+
+        <section>
+          <!-- Modals -->
+
+          <!-- Simpsons Ride -->
+          <div
+            class="modal fade"
+            id="modalRide"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    <i class="fas fa-map-marked-alt"></i> The Simpsons Ride
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <div class="labelModal">
+                      <i class="fas fa-route"></i> Local
+                    </div>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.001057561649!2d-81.46980488559653!3d28.4795147977422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77edebf8a24b3%3A0x54e7fe6e45f29ff1!2sThe%20Simpsons%20Ride!5e0!3m2!1spt-BR!2sbr!4v1632523259652!5m2!1spt-BR!2sbr"
+                      width="100%"
+                      height="225"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+                  <hr />
+                  <div class="labelModal">
+                    <i class="fas fa-comment-alt"></i> Descrição
+                  </div>
+                  <div>
+                    O Universal Studios Florida é um parque de diversão
+                    localizado em Orlando, Flórida, Estados Unidos. Aberto em 7
+                    de junho de 1990, o tema do parque é a indústria do
+                    entretenimento, em particular filmes e televisão. O
+                    Universal Studios Florida inspira seus visitantes a "entrar
+                    nos filmes" e apresenta várias atrações e shows ao vivo. O
+                    parque é um componente do Universal Orlando Resort. Em 2013,
+                    o parque atraiu cerca de 7,06 milhões de visitantes, sendo o
+                    oitavo parque de diversões mais visitado dos Estados Unidos
+                    e o 16º do mundo.
+                  </div>
+                  <hr />
+                  <div class="labelModal">
+                    <i class="fas fa-clock"></i> Horários de atendimento
+                  </div>
+                  <div>
+                    sexta-feira 08:00–17:00 sábado 08:00–17:00 domingo
+                    08:00–20:00 segunda-feira 08:00–19:00 terça-feira
+                    09:00–19:00 quarta-feira 09:00–18:00 quinta-feira
+                    09:00–19:00
+                  </div>
+                  <hr />
+                  <div class="labelModal">
+                    <i class="fas fa-dollar-sign"></i> Preço
+                  </div>
+                  <div>US$ 119,00 para adultos e US$ 114,00 para crianças</div>
+                  <hr />
+                  <div class="labelModal"><i class="fas fa-link"></i> Site</div>
+                  <div>
+                    <a
+                      href="https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/the-simpsons-ride"
+                      target="_blank"
+                      >https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/the-simpsons-ride</a
+                    >
+                  </div>
+                  <hr />
+                  <div class="labelModal">
+                    <i class="fas fa-mobile-alt"></i> Telefone
+                  </div>
+                  <div>+14073638000</div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Fechar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cristo -->
+          <div
+            class="modal fade"
+            id="modalCristo"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    <i class="fas fa-map-marked-alt"></i> Cristo Redentor
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <div class="labelModal">
+                      <i class="fas fa-route"></i> Local
+                    </div>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.954274605688!2d-43.21267588555909!3d-22.951911045251776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fd5984aa13f%3A0x9dc984d7019502de!2sCristo%20Redentor!5e0!3m2!1spt-BR!2sbr!4v1632523778309!5m2!1spt-BR!2sbr"
+                      width="100%"
+                      height="225"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+                  <hr />
+                  <div class="labelModal">
+                    <i class="fas fa-comment-alt"></i> Descrição
+                  </div>
+                  <div>
+                    Cristo Redentor é uma estátua art déco que retrata Jesus
+                    Cristo, localizada no topo do morro do Corcovado, a 709
+                    metros acima do nível do mar, no Parque Nacional da Tijuca,
+                    com vista para a maior parte da cidade do Rio de Janeiro,
+                    Brasil. Em 2007 foi eleito informalmente como uma das sete
+                    maravilhas do mundo moderno. Em 2012 a UNESCO considerou o
+                    Cristo Redentor como parte da paisagem do Rio de Janeiro
+                    incluída na lista de Patrimônios da Humanidade.
+                  </div>
+                  <hr />
+                  <div class="labelModal">
+                    <i class="fas fa-clock"></i> Horários de atendimento
+                  </div>
+                  <div>
+                    sexta-feira 08:00–19:00 sábado 08:00–19:00 domingo
+                    08:00–19:00 segunda-feira 08:00–19:00 terça-feira
+                    08:00–19:00 quarta-feira 08:00–19:00 quinta-feira
+                    08:00–19:00
+                  </div>
+                  <hr />
+                  <div class="labelModal">
+                    <i class="fas fa-dollar-sign"></i> Preço
+                  </div>
+                  <div>
+                    Ingresso inteiro – Alta Temporada*: R$ 83,50 Ingresso
+                    inteiro – Baixa Temporada*: R$ 68,50 Idoso (acima de 60 anos
+                    residente no Brasil) R$ 26,00 Criança (5 a 11 anos) R$ 52,00
+                  </div>
+                  <hr />
+                  <div class="labelModal"><i class="fas fa-link"></i> Site</div>
+                  <div>
+                    <a
+                      href="http://visit.rio/que_fazer/cristoredentor"
+                      target="_blank"
+                      >http://visit.rio/que_fazer/cristoredentor</a
+                    >
+                  </div>
+                  <hr />
+                  <div class="labelModal">
+                    <i class="fas fa-mobile-alt"></i> Telefone
+                  </div>
+                  <div>+55 21 2558-1329</div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Fechar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Muralha -->
+          <div
+            class="modal fade"
+            id="modalMuralha"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    <i class="fas fa-map-marked-alt"></i> Muralha da China
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <div class="labelModal">
+                      <i class="fas fa-route"></i> Local
+                    </div>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9589583960046!2d116.56818621539638!3d40.43190767936339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f121d7687f2ccf%3A0xd040259b950522df!2sMuralha%20da%20China!5e0!3m2!1spt-BR!2sbr!4v1632518308459!5m2!1spt-BR!2sbr"
+                      width="100%"
+                      height="225"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+                  <hr />
+                  <div class="labelModal">
+                    <i class="fas fa-comment-alt"></i> Descrição
+                  </div>
+                  <div>
+                    Grande Muralha da China é uma série de fortificações feitas
+                    de pedra, tijolo, terra compactada, madeira e outros
+                    materiais, geralmente construída ao longo de uma linha
+                    leste-oeste através das fronteiras históricas do norte da
+                    China para proteger os Estados e impérios chineses contra as
+                    invasões dos vários grupos nômades das estepes da Eurásia.
+                  </div>
+                  <hr />
+                  <div class="labelModal">
+                    <i class="fas fa-clock"></i> Horários de atendimento
+                  </div>
+                  <div>
+                    De 06:30 às 19:00 (alta temporada) ou 07:30 às 18:00 (baixa
+                    temporada).
+                  </div>
+                  <hr />
+                  <div class="labelModal">
+                    <i class="fas fa-dollar-sign"></i> Preço
+                  </div>
+                  <div>
+                    Ingressos a 40 yuan (R$ 20) na alta temporada [abril a
+                    outubro] e 35 yuan (R$ 17,50) na baixa temporada [novembro a
+                    março].
+                  </div>
+                  <hr />
+                  <div class="labelModal"><i class="fas fa-link"></i> Site</div>
+                  <div>
+                    <a href="http://www.mutianyugreatwall.com" target="_blank"
+                      >http://www.mutianyugreatwall.com/</a
+                    >
+                  </div>
+                  <hr />
+                  <div class="labelModal">
+                    <i class="fas fa-mobile-alt"></i> Telefone
+                  </div>
+                  <div>+861061626022</div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Fechar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="my-5" />
+      </div>
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="bg-light text-lg-start bg-op">
+      <!-- Copyright -->
+      <div class="text-center p-3">Desenvolvido por: Rafael Santos 2021</div>
+      <!-- Copyright -->
+    </footer>
+    <!--Footer-->
+    <script type="text/javascript" src="./content/js/mdb.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./content/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

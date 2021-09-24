@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: "Simpsonfont";
+  src: url("../font/Simpsonfont-p07r.woff") format("woff"),
+    url("../font/Simpsonfont-p07r.ttf") format("truetype");
+}
+
+body {
+  font-family: Roboto, Helvetica;
+  background-color: #fdfdfd;
+}
+
+/* Carousel styling */
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 100vh;
+}
+
+.navbar-bg {
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2000;
+}
+
+.player-mp3 {
+  height: 40px;
+}
+
+.div-mp3 {
+  margin-top: -6px;
+  height: 35px;
+}
+
+.txt-bg {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  padding: 10px 10px;
+  font-family: Simpsonfont, Roboto;
+}
+
+.font-simpson {
+  font-family: Simpsonfont, Roboto;
+}
+
+.carousel-item:nth-child(1) {
+  background-image: url("../img/backgrounds/inicio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(2) {
+  background-image: url("../img/backgrounds/filme.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(3) {
+  background-image: url("../img/backgrounds/todos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #introCarousel {
+    margin-top: -58.59px;
+  }
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+.bg-op {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn-secondary {
+  background-color: #ffe233 !important;
+  color: #282222 !important;
+  border: 1px solid #000 !important;
+  font-weight: 500 !important;
+}
+
+.labelModal {
+  font-weight: bold;
+}
+
+.modal-dialog {
+  max-width: 70% !important;
+}
